@@ -2,15 +2,32 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   width: 100%;
-  padding: 0 20px;
   display: flex;
+  padding: 0 20px;
   justify-content: space-between;
   box-shadow: 0px 4px 6px 0px #0000007a;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background: #fff;
+
   .logo {
-    padding: 5px 0;
+    padding: 0;
     object-fit: cover;
     width: 110px;
     height: 60px;
+
+    @media (min-width: 768px) {
+      padding: 5px 0;
+    }
+
+    img {
+      width: 100%;
+
+      @media (min-width: 768px) {
+        width: auto;
+      }
+    }
   }
 
   @media (min-width: 768px) {

@@ -7,6 +7,7 @@ export const Ul = styled.ul<{ open: boolean }>`
   align-items: center;
   flex: 1;
   margin: 0 0 0 50px;
+  padding: 60px 0;
 
   li {
     padding: 18px 10px;
@@ -14,8 +15,9 @@ export const Ul = styled.ul<{ open: boolean }>`
     font-family: ${(props) => props.theme.fonts.inter};
     font-weight: 400;
     text-transform: uppercase;
-    color: #000000;
+    color: ${(props) => props.theme.color.black};
     cursor: pointer;
+
     &:hover {
       color: red;
       font-weight: 700;
@@ -35,7 +37,7 @@ export const Ul = styled.ul<{ open: boolean }>`
     text-transform: uppercase;
     height: 48px;
     border-radius: 5px;
-    color: #fff;
+    color: ${(props) => props.theme.color.white};
     width: 186px;
     cursor: pointer;
   }
@@ -48,7 +50,7 @@ export const Ul = styled.ul<{ open: boolean }>`
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #0d2538;
+    background-color: ${(props) => props.theme.color.white};
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
@@ -58,7 +60,7 @@ export const Ul = styled.ul<{ open: boolean }>`
     transition: transform 0.3s ease-in-out;
 
     li {
-      color: #fff;
+      /* color: #fff; */
     }
   }
 `;
