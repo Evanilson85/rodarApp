@@ -29,7 +29,7 @@ export const Container = styled.div`
     }
 
     p {
-      color: #212121;
+      color: ${(props) => props.theme.color.darkGray};
       font-family: ${(props) => props.theme.fonts.inter};
       font-size: 1.2rem;
       font-style: normal;

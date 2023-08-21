@@ -3,7 +3,7 @@ import { Container, Text, TextInfo } from './style'
 export const About = () => {
   return (
     <>
-      <Container>
+      <Container  id='about'>
         <Text>
           SOBRE A RODAR
         </Text>

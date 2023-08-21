@@ -4,7 +4,6 @@ export const Container = styled.div`
   max-width: 1200px;
   width: 100%;
   margin: 0 auto 30px;
-  /* display: flex; */
 
   section {
     .title {
@@ -34,8 +33,6 @@ export const Container = styled.div`
         width: 334px;
         height: 366px;
         overflow: auto;
-        /* border: 1px solid #000; */
-        /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
         border-radius: 20px;
         background: #fafafa;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -43,6 +40,7 @@ export const Container = styled.div`
 
         .text {
           padding: 15px 20px 10px;
+
           h3 {
             color: #000;
             font-family: ${(props) => props.theme.fonts.inter};

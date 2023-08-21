@@ -1,11 +1,11 @@
 export const Theme = {
   color: {
-    background: "#FFF",
     white: "#fff",
     textWhite: "#EEEEEE",
 
     black: "#000",
     text: "#212121",
+    darkGray: "#212121",
 
     red: "#BC0713",
     redText: "#F1313E",

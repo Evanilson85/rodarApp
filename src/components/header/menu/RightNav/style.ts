@@ -26,10 +26,14 @@ export const Ul = styled.ul<{ open: boolean }>`
     &:focus {
       font-weight: 700;
     }
+
+    a {
+      color: ${(props) => props.theme.color.black};
+    }
   }
 
   button {
-    background-color: #212121;
+    background-color: ${(props) => props.theme.color.darkGray};
     padding: 0px 10px;
     margin: 10px;
     font-family: ${(props) => props.theme.fonts.inter};
@@ -40,6 +44,10 @@ export const Ul = styled.ul<{ open: boolean }>`
     color: ${(props) => props.theme.color.white};
     width: 186px;
     cursor: pointer;
+
+    a {
+      color: ${(props) => props.theme.color.white};
+    }
   }
 
   .buttonApp {

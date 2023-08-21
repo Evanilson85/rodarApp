@@ -68,7 +68,7 @@ export const header = styled.header`
       rgba(238, 239, 241, 1) 50%,
       rgba(238, 239, 241, 1) 100%
     );
-    /* display: flex; */
+
     align-items: center;
     justify-content: center;
     height: auto;
@@ -86,14 +86,5 @@ export const header = styled.header`
         width: 63%;
       }
     }
-  }
-
-  .container {
-    width: 80%;
-    background-color: red;
-    height: 100%;
-
-    border: 320px solid;
-    border-color: #bf141d #eeeff1 #bf141d #bf141d;
   }
 `;

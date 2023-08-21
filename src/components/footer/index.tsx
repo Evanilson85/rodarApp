@@ -3,7 +3,7 @@ import { Container, Text, SubText, Button, FooterContainer } from "./style"
 export const Footer = () => {
   return (
     <>
-      <Container>
+      <Container id='footer'>
         <Text>
           DEIXE A RODAR CUIDAR DA SUA FROTA
         </Text>

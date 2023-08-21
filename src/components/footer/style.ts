@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.footer`
-  background-color: #212121;
+  background-color: ${(props) => props.theme.color.darkGray};
   height: 300px;
   display: flex;
   align-items: center;
@@ -47,13 +47,12 @@ export const Button = styled.button`
   margin: 50px 0px 0px;
 
   a {
-    color: #fff;
+    color: ${(props) => props.theme.color.white};
   }
 `;
 
 export const FooterContainer = styled.div`
   background-color: #111111;
-  /* max-height: 133px; */
   height: auto;
   padding: 20px;
   display: flex;
@@ -77,7 +76,7 @@ export const FooterContainer = styled.div`
     justify-content: space-between;
 
     p {
-      color: #fff;
+      color: ${(props) => props.theme.color.white};
       font-family: ${(props) => props.theme.fonts.inter};
       font-size: 0.9rem;
       font-style: normal;

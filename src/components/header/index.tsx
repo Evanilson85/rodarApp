@@ -24,7 +24,7 @@ export const Header = () => {
   return (
     <>
       <Menu/>
-      <S.header>
+      <S.header id='Home'>
           <div className='desktop'>
             <img src={home} alt="" />
           </div>
@@ -44,9 +44,6 @@ export const Header = () => {
               ))}
             </div>
           </div>
-        {/* <div className='container'>
-
-        </div> */}
       </S.header>
     </>
   )
